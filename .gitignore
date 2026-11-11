@@ -1,0 +1,29 @@
+# Niemals ins Repo: Nintendo-/Fremddateien, Dumps, Schluessel, Medien, Build-Ergebnisse
+*.wad
+*.WAD
+*.wpk
+*.WPK
+*.dol
+*.DOL
+*.elf
+*.ELF
+*.app
+*.bin
+*.mp3
+*.ogg
+*.iso
+*.wbfs
+*.img
+*_keys.bin
+*nand*.bin
+nus-roh/
+nus-wads/
+build/
+obj/
+*.log
+test-config.h
+# Abschnitte mit persoenlichen Daten
+protokoll/
+IOS-FREIGABE.txt
+__pycache__/
+*.pyc

@@ -1,0 +1,60 @@
+version = 1
+SPDX-PackageName = "Wii Automod / Wii Mods komplett entfernen"
+SPDX-PackageSupplier = "Maarcelnk03 <https://github.com/Maarcelnk03>"
+SPDX-PackageDownloadLocation = "https://github.com/Maarcelnk03/Wii-Automod"
+
+# Maschinenlesbare Lizenzangaben nach dem REUSE-Standard (https://reuse.software).
+# Fremdcode wird hier zentral deklariert, damit die Original-Dateikoepfe unveraendert bleiben.
+
+# --- Eigene Arbeit: Dokumentation, Werkzeuge, Hardware ---------------------
+[[annotations]]
+path = ["README.md", "BUILD.md", "HARDWARE.md", "DISCLAIMER.md", "TESTED-ON.md", "THIRD-PARTY.md", "LICENSE", "REUSE.toml", ".gitignore", "docs/FUNKTIONSWEISE.md", "LIZENZ-UEBERSICHT.md"]
+SPDX-FileCopyrightText = "2026 Maarcelnk03"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["tools/**", "hardware/gehaeuse/**", "hardware/fotos/**"]
+SPDX-FileCopyrightText = "2026 Maarcelnk03"
+SPDX-License-Identifier = "MIT"
+
+# --- Wii-Programme: eigener Code, aber mit GPL-Anteilen verlinkt -----------
+[[annotations]]
+path = ["src/wii-mods-entfernen/**", "src/installer/**", "src/wlan-loader-wii/**"]
+SPDX-FileCopyrightText = ["2026 Maarcelnk03", "2020-2026 thepikachugamer und Mitwirkende (nanddumper@IOS)", "2008-2026 crediar, phpgeek, DacoTaco und Mitwirkende (Priiloader)"]
+SPDX-License-Identifier = "GPL-2.0-or-later"
+
+# --- Abgeleitet von nanddumper@IOS (GPL-2.0) -------------------------------
+[[annotations]]
+path = "src/nand-dumper-post/**"
+SPDX-FileCopyrightText = ["2026 Maarcelnk03", "2020-2026 thepikachugamer", "2008-2009 Sven Peter, Haxx Enterprises, Hector Martin, John Kelley", "2020 Pablo Curiel"]
+SPDX-License-Identifier = "GPL-2.0-or-later"
+
+# --- Abgeleitet von Priiloader (GPL-2.0-or-later) --------------------------
+[[annotations]]
+path = ["src/priiloader-modul/**", "docs/Priiloader-Lizenzhinweis.txt"]
+SPDX-FileCopyrightText = ["2008-2026 crediar, phpgeek, DacoTaco und Mitwirkende", "2026 Maarcelnk03 (Aenderungen)"]
+SPDX-License-Identifier = "GPL-2.0-or-later"
+
+# --- Abgeleitet von BlueBomb Micro (GPL-3.0); Bau benoetigt btstack --------
+[[annotations]]
+path = "src/esp-firmware-overlay/**"
+SPDX-FileCopyrightText = ["2022-2026 GaryOderNichts (BlueBomb Micro)", "2020-2026 Fullmetal5 (BlueBomb)", "2026 Maarcelnk03 (Aenderungen)"]
+SPDX-License-Identifier = "GPL-3.0-only"
+
+# --- wiisd.c: SD-Treiber aus libogc (BSD-3-Clause), von uns angepasst -----
+[[annotations]]
+path = ["src/wii-mods-entfernen/wiisd.c", "src/installer/wiisd.c", "src/wlan-loader-wii/wiisd.c", "src/wii-mods-entfernen/diskio.h", "src/installer/diskio.h", "src/wlan-loader-wii/diskio.h"]
+SPDX-FileCopyrightText = ["2008 Michael Wiedenbauer (shagkur), Dave Murphy (WinterMute), Sven Peter", "2026 Maarcelnk03 (Aenderungen)"]
+SPDX-License-Identifier = "BSD-3-Clause"
+
+# --- FatFs (ChaN), unveraendert bzw. nur konfiguriert ----------------------
+[[annotations]]
+path = "third-party/fatfs/**"
+SPDX-FileCopyrightText = "2025 ChaN"
+SPDX-License-Identifier = "LicenseRef-FatFs"
+
+# --- Belege zu Fremdlizenzen (nur Dokumentation, Code liegt nicht im Repo) --
+[[annotations]]
+path = "docs/libogc-Lizenz-Beleg.txt"
+SPDX-FileCopyrightText = "2004-2025 Michael Wiedenbauer, Dave Murphy (libogc)"
+SPDX-License-Identifier = "Zlib"

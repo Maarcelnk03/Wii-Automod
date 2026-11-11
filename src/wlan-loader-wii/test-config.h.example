@@ -1,0 +1,6 @@
+/* Wird von tools/gen-config.py als test-config.h erzeugt (zufaelliges Passwort pro Bau).
+   Dieselben Werte muessen im ESP-Firmware-Overlay (ports/esp32/main/test-config.h) und im Wii-Lader stehen. */
+#define TEST_SSID "WII-TRANSFER-X"
+#define TEST_PASS "WIRD-ERZEUGT"
+#define TEST_BYTES (4u*1024u*1024u)
+#define TEST_CRC 0xc1d46223u

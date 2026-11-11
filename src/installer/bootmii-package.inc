@@ -1,0 +1,3 @@
+#define BOOTMII_SIZE 364420u
+#define BOOTMII_CRC 0x103e28feu
+#define BOOTMII_FILES 2u
